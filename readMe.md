@@ -606,7 +606,7 @@ When you run _index.html_ file in the 01-Day folder you should get this:
 I am 25 years old.
 You are 30 years old.
 ```
-![Solution](./01_Days_introductions/exercises)
+![Solution](./01_Day_introduction/exercises)
 
 🎉 CONGRATULATIONS ! 🎉
 
