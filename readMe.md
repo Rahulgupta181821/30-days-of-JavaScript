@@ -3,8 +3,8 @@
 | # Day |                                                                       Topics                                                                        |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------------------------------: |
 | 01    |                                                             [Introduction](./readMe.md)                                                             |
-
-[Day 2 >>](./02_Day_Data_types/02_day_data_types.md)
+| 02    |                                               [Data Types](./02_Day_introduction/02_day_data_types.md)                                                |
+[Day 2 >>](./02_Day_introduction/02_day_data_types.md)
 - [30 Days Of JavaScript](#30-days-of-javascript)
 - [📔 Day 1](#-day-1)
 	- [Introduction](#introduction)
