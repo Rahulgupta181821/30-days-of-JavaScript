@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>30DaysOfJavaScript Challenge Ongoing</h1>
+    <h1>30DaysOfReact Challenge Coming</h1>
+    <h1>30DaysOfFullStack Challenge Coming</h1>
+    <h1>30DaysOfDataAnalysis Challenge Coming</h1>
+    <h1>30DaysOfReactNative Challenge Coming</h1>
+    <h1>30DaysOfMachineLearning Challenge Comeing</h1>
+    <script>
+        const title = document.querySelectorAll('h1');
+        title.forEach((item, i) => {
+            item.style.fontSize = '24px'
+            if (i % 2 === 0) {
+                item.style.color = 'green'
+                item.style.backgroundColor = 'pink'
+                console.log(i);
+            } else {
+                item.style.color = 'red'
+                item.style.backgroundColor = 'yellow'
+                console.log(i);
+            }
+
+        })
+    </script>
+</body>
+
+</html>
