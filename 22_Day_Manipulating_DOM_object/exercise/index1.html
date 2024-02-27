@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model:30 Days Of JavaScript</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Number Generator</h1>
+        <h2>30 DaysOfJavaScript: DOM Day 2</h2>
+        <h3>Author,Asabeneh Yetayeh</h3>
+    </div>
+
+    <script>
+        const div = document.createElement('div');
+        div.className = 'container'
+        div.style.display = 'flex';
+        div.style.flexFlow = 'wrap';
+        div.style.justifyContent = 'center';
+        div.style.alignItems = 'center';
+        div.style.width = '35%'
+        div.style.height = 'auto';
+        div.style.marginLeft = '32%';
+
+        const checkPrimeNumber = (item) => {
+            let counter = 0;
+            for (let i = 1; i ** 2 <= item; i++) {
+                if (item % i == 0) {
+                    counter++;
+                    if (item % i != i) {
+                        counter++;
+                    }
+                }
+
+            }
+            if (counter == 2) {
+                return true;
+            }
+            return false;
+
+        }
+        for (let i = 0; i <= 101; i++) {
+            const span = document.createElement('span');
+            span.textContent = i;
+            span.style.width = '50px';
+            span.style.height = '20px';
+            span.style.padding = '15px';
+            span.style.margin = '3px';
+            span.style.color = '#fff';
+            span.style.fontWeight = '600';
+            span.style.fontSize = '1.8rem';
+            <!-- span.style.textAlign = 'center'; -->
+            span.style.display = 'flex'
+            span.style.justifyContent = 'center';
+            span.style.alignItems = 'center';
+            if (checkPrimeNumber(i)) {
+                span.style.backgroundColor = 'red';
+            } else
+            if (i % 2 === 0) {
+                span.style.backgroundColor = 'green';
+            } else {
+                span.style.backgroundColor = 'yellow';
+            }
+            div.appendChild(span);
+
+        }
+        const maindiv = document.querySelector('.main-container')
+        maindiv.appendChild(div);
+        maindiv.style.width = '100%';
+        maindiv.style.height = 'auto%';
+
+        maindiv.style.textAlign = 'center';
+    </script>
+</body>
+
+</html>
